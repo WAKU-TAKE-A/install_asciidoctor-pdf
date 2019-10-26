@@ -1,7 +1,7 @@
 set dn_ruby_bin=C:\Ruby26-x64\bin
 
-if exist http_proxy.txt (for /f "usebackq" %p in (http_proxy.txt) do set http_proxy=%p)
-if exist https_proxy.txt (for /f "usebackq" %q in (https_proxy.txt) do set https_proxy=%q)
+if exist http_proxy.txt (for /f "usebackq" %%p in (http_proxy.txt) do set http_proxy=%%p)
+if exist https_proxy.txt (for /f "usebackq" %%q in (https_proxy.txt) do set https_proxy=%%q)
 
 ReadMe.jpg
 ReadMe2.jpg
