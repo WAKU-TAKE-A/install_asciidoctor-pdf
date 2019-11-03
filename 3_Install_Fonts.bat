@@ -6,4 +6,4 @@ set fn_transform_150b7=C:\Ruby26-x64\lib\ruby\gems\2.6.0\gems\asciidoctor-pdf-1.
 if exist %fn_transform_150b7% (copy /y %fn_transform_150b7% %fn_transform_150b7%.org)
 if exist %fn_transform_150b7% (copy /y  transform.rb.150b7  %fn_transform_150b7%)
 
-asciidoctor-pdf-cjk-kai_gen_gothic-install >> InstallLog.txt
+ruby Download_Fonts.rb >> InstallLog.txt
