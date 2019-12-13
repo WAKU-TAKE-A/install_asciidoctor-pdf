@@ -2,7 +2,7 @@
 
 asciidoctor-pdfをインストールするためのbatファイル。Ruby2.6系、x64ビットWindows用。
 
-asciidoctor-pdfは「1.5.0.beta.7」、asciidoctor-pdf-cjk-kai_gen_gothicは「0.1.1」をインストールします。
+asciidoctor-pdfは「1.5.0.beta.8」、asciidoctor-pdf-cjk-kai_gen_gothicは「0.1.1」をインストールします。
 
 ## batファイルの使い方
 

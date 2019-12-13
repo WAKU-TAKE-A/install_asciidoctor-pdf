@@ -2,7 +2,7 @@
 
 require 'open-uri'
 
-FontsDir = File.expand_path('C:\Ruby26-x64\lib\ruby\gems\2.6.0\gems\asciidoctor-pdf-1.5.0.beta.7\data\fonts')
+FontsDir = File.expand_path('C:\Ruby26-x64\lib\ruby\gems\2.6.0\gems\asciidoctor-pdf-1.5.0.beta.8\data\fonts')
 
 FontsKaiGen = %w(
   KaiGenGothicJP-Bold-Italic.ttf

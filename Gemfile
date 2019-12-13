@@ -5,7 +5,7 @@ source "https://rubygems.org"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem 'asciidoctor'
-gem 'asciidoctor-pdf', '1.5.0.beta.7'
+gem 'asciidoctor-pdf', '1.5.0.beta.8'
 gem 'asciidoctor-pdf-cjk'
 gem 'asciidoctor-pdf-linewrap-ja'
 gem 'concurrent-ruby'
