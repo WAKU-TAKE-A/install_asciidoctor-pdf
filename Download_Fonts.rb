@@ -2,7 +2,7 @@
 
 require 'open-uri'
 
-FontsDir = File.expand_path('C:\Ruby26-x64\lib\ruby\gems\2.6.0\gems\asciidoctor-pdf-1.5.0.beta.8\data\fonts')
+FontsDir = File.expand_path('C:\Ruby26-x64\lib\ruby\gems\2.6.0\gems\asciidoctor-pdf-1.5.3\data\fonts')
 
 FontsKaiGen = %w(
   KaiGenGothicJP-Bold-Italic.ttf
@@ -44,7 +44,7 @@ Dir.chdir(FontsDir) do
     msg = "[#{index + 1}/#{FontsGenYo.count}] Downloading #{name}"
     puts msg
     File.open(name, 'wb') do |file_ttf|
-      file_ttf.write open("https://github.com/ButTaiwan/genyo-font/raw/master/JP/#{name}").read
+      file_ttf.write open("https://github.com/ButTaiwan/genyo-font/blob/bc2fa246196fefc1ef9e9843bc8cdba22523a39d/JP/#{name}").read
     end
   end
   FontsRicty.each_with_index do |name, index|

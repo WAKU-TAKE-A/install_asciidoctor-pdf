@@ -2,13 +2,13 @@
 
 asciidoctor-pdfをインストールするためのbatファイル。Ruby2.6系、x64ビットWindows用。
 
-asciidoctor-pdfは「1.5.0.beta.8」、asciidoctor-pdf-cjk-kai_gen_gothicは「0.1.1」をインストールします。
+asciidoctor-pdfは「1.5.3」、asciidoctor-pdf-cjk-kai_gen_gothicは「0.1.1」をインストールします。
 
 ## batファイルの使い方
 
 * [こちら](https://rubyinstaller.org/downloads/)から、Ruby2.6系、x64ビットWindows用のインストーラをダウンロードします。
 * 「1_Install_Ruby26_x64.bat」のあるフォルダにRubyのインストーラをコピーします。
-* Proxyを設定する時は、「http_prosy.txt」と「https_proxy.txt」に入力してください。書式は以下の通りです。
+* Proxyを設定する時は、「http_prosy.txt」と「https_proxy.txt」に入力してください。書式は以下の通りです。`http://`を付け忘れないこと。また、`http://user:password@・・・`とするとエラーになるようです。
 
 ```
 http://プロキシのアドレス:ポート番号
