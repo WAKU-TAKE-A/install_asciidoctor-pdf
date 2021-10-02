@@ -2,7 +2,9 @@
 
 require 'open-uri'
 
-FontsDir = File.expand_path('C:\Ruby27-x64\lib\ruby\gems\2.7.0\gems\asciidoctor-pdf-1.5.4\data\fonts')
+Dir.glob("C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/asciidoctor-pdf-*/data/fonts/") do |item|
+  FontsDir = File.expand_path(item)
+end
 
 FontsKaiGen = %w(
   KaiGenGothicJP-Bold-Italic.ttf
@@ -37,21 +39,21 @@ Dir.chdir(FontsDir) do
     msg = "[#{index + 1}/#{FontsKaiGen.count}] Downloading #{name}"
     puts msg
     File.open(name, 'wb') do |file_ttf|
-      file_ttf.write open("https://github.com/chloerei/asciidoctor-pdf-cjk-kai_gen_gothic/releases/download/v0.1.0-fonts/#{name}").read
+      file_ttf.write URI.open("https://github.com/chloerei/asciidoctor-pdf-cjk-kai_gen_gothic/releases/download/v0.1.0-fonts/#{name}").read
     end
   end
   FontsGenYo.each_with_index do |name, index|
     msg = "[#{index + 1}/#{FontsGenYo.count}] Downloading #{name}"
     puts msg
     File.open(name, 'wb') do |file_ttf|
-      file_ttf.write open("https://github.com/ButTaiwan/genyo-font/blob/bc2fa246196fefc1ef9e9843bc8cdba22523a39d/JP/#{name}").read
+      file_ttf.write URI.open("https://github.com/ButTaiwan/genyo-font/blob/bc2fa246196fefc1ef9e9843bc8cdba22523a39d/JP/#{name}").read
     end
   end
   FontsRicty.each_with_index do |name, index|
     msg = "[#{index + 1}/#{FontsRicty.count}] Downloading #{name}"
     puts msg
     File.open(name, 'wb') do |file_ttf|
-      file_ttf.write open("https://github.com/mzyy94/RictyDiminished-for-Powerline/raw/master/#{name}").read
+      file_ttf.write URI.open("https://github.com/mzyy94/RictyDiminished-for-Powerline/raw/master/#{name}").read
     end
   end
 end
