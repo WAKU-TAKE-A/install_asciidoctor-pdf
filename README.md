@@ -1,6 +1,6 @@
 # install_asciidoctor-pdf
 
-asciidoctor-pdfをインストールするためのbatファイル。Ruby2.7系、x64ビットWindows用。
+asciidoctor-pdfをインストールするためのbatファイル。Ruby2.7系、x64ビットWindows用、asciidoctor-pdf-cjk対応（asciidoctor-pdf v1.5系）。
 
 ## batファイルの使い方
 
@@ -12,5 +12,5 @@ asciidoctor-pdfをインストールするためのbatファイル。Ruby2.7系�
 http://プロキシのアドレス:ポート番号
 ```
 
-* すでにインストールされているRubyはアンインストールし、残ったフォルダは削除してください。
+* すでにインストールされているRubyはアンインストールし、残ったフォルダは、**必 ず** 削除してください。
 * 「1_Install_Ruby26_x64.bat」 ⇒ 「2_Install_Modules.bat」 ⇒ 「3_Install_Fonts.bat」の順で実行します。
