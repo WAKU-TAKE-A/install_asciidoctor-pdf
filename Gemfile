@@ -6,7 +6,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem 'asciidoctor'
 gem 'asciidoctor-pdf'
-gem 'asciidoctor-pdf-cjk'
-gem 'asciidoctor-pdf-linewrap-ja'
 gem 'concurrent-ruby'
 gem 'asciidoctor-rouge'

@@ -2,7 +2,20 @@
 
 require 'open-uri'
 
-Dir.glob("C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/asciidoctor-pdf-*/data/fonts/") do |item|
+if Dir.exist?("C:/Ruby31-x64/") then
+  RubyGemsDir = "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/"
+elsif Dir.exist?("C:/Ruby30-x64/") then
+  RubyGemsDir = "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/"
+elsif Dir.exist?("C:/Ruby27-x64/") then
+  RubyGemsDir = "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/"
+else
+  puts "Ruby not found in c:/"
+  exit
+end
+
+puts "Ruby gems are in " + RubyGemsDir
+
+Dir.glob(RubyGemsDir + "asciidoctor-pdf-*/data/fonts/") do |item|
   FontsDir = File.expand_path(item)
 end
 
