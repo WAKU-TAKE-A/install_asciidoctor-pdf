@@ -1,0 +1,3 @@
+1_Install_Ruby_x64.bat
+bundle install
+ruby Download_Fonts.rb
