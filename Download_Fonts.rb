@@ -2,7 +2,9 @@
 
 require 'open-uri'
 
-if Dir.exist?("C:/Ruby31-x64/") then
+if Dir.exist?("C:/Ruby32-x64/") then
+  RubyGemsDir = "C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/"
+elsif Dir.exist?("C:/Ruby31-x64/") then
   RubyGemsDir = "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/"
 elsif Dir.exist?("C:/Ruby30-x64/") then
   RubyGemsDir = "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/"

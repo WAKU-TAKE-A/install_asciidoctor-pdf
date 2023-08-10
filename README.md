@@ -2,7 +2,7 @@
 
 ruby、asciidoctor-pdf関連のモジュール、フォントをインストールするするためのセットです。
 
-Ruby2.7／3.0／3.1系、x64ビットWindows用です。
+Ruby2.7／3.0／3.1／3.2系、x64ビットWindows用です。
 
 asciidoctor-pdf-cjk対応版は、上部のtagsの「For_asciidoctor-pdf-cjk」を参考にしてください。
 
