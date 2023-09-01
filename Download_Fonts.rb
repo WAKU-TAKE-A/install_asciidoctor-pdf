@@ -2,24 +2,21 @@
 
 require 'open-uri'
 
-if Dir.exist?("C:/Ruby32-x64/") then
-  RubyGemsDir = "C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/"
-elsif Dir.exist?("C:/Ruby31-x64/") then
-  RubyGemsDir = "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/"
-elsif Dir.exist?("C:/Ruby30-x64/") then
-  RubyGemsDir = "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/"
-elsif Dir.exist?("C:/Ruby27-x64/") then
-  RubyGemsDir = "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/"
+DIR = File.read("gemdir.txt").chomp("")
+
+if DIR[DIR.length-1] != "/"
+  RubyGemsDir = DIR + "/"
 else
-  puts "Ruby not found in c:/"
-  exit
+  RubyGemsDir = DIR
 end
 
-puts "Ruby gems are in " + RubyGemsDir
+puts "Ruby gems are in " + RubyGemsDir + "."
 
-Dir.glob(RubyGemsDir + "asciidoctor-pdf-*/data/fonts/") do |item|
+Dir.glob(RubyGemsDir + "gems/asciidoctor-pdf-*/data/fonts/") do |item|
   FontsDir = File.expand_path(item)
 end
+
+puts "Fonts are in " + FontsDir + "."
 
 FontsKaiGen = %w(
   KaiGenGothicJP-Bold-Italic.ttf
@@ -73,4 +70,4 @@ Dir.chdir(FontsDir) do
   end
 end
 
-puts 'Done'
+puts 'Done.'

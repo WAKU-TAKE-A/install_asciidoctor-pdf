@@ -1,3 +1,4 @@
-1_Install_Ruby_x64.bat
-2_Install_Modules.bat
-3_Install_Fonts.bat
+Install_Ruby_x64.bat
+gem environment gemdir > gemdir.txt
+bundle install
+ruby Download_Fonts.rb
