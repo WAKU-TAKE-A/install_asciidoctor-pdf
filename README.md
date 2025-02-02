@@ -2,7 +2,7 @@
 
 ruby、asciidoctor-pdf関連のモジュール、フォントをインストールするするためのセットです。
 
-Ruby3.0／3.1／3.2系、x64ビットWindows用です。
+Ruby x64ビットWindows用です。
 
 asciidoctor-pdf-cjk対応版は、上部のtagsの「For_asciidoctor-pdf-cjk」を参考にしてください。
 
@@ -12,7 +12,7 @@ asciidoctor-pdf-cjk対応版は、上部のtagsの「For_asciidoctor-pdf-cjk」�
 
 RunMultipleBatFiles.exeは複数のバッチファイル（もしくは1行DOSコマンド）を実行するアプリケーションです。
 
-1. [こちら](https://rubyinstaller.org/downloads/)から、Ruby2.7／3.0／3.1系いずれかのx64ビットWindows用のインストーラをダウンロードします。(+Devkitじゃない方でOKです)<br><br>
+1. [こちら](https://rubyinstaller.org/downloads/)から、Ruby x64ビットWindows用のインストーラをダウンロードします。(+Devkitじゃない方でOKです)<br><br>
 1. batファイルのあるフォルダにRubyのインストーラをコピーします。<br><br>
 1. すでにインストールされているRubyは必ずアンインストールし、残ったフォルダは削除してください。<br><br>
 1. RunMultipleBatFiles.exeを起動します。<br><br>
